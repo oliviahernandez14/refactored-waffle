@@ -63,6 +63,16 @@ public class Parent_Restaurant {
 		}
 	}
 	
+	public double Tax = 0.99;
+	
+	public Double FindTax(double cAmount)
+	{
+		double FindTax = cAmount - (cAmount * Tax);
+		return FindTax;
+	}
+	
+	
+	
 	public void Number(java.awt.event.KeyEvent evt)
 	{
 		char iNumber = evt.getKeyChar();
