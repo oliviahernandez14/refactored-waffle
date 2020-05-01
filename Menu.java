@@ -24,18 +24,21 @@ import javax.swing.JTextArea;
 public class Menu {
 
 	private JFrame frame;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
-	private JTextField textField_4;
-	private JTextField textField_5;
-	private JTextField textField_6;
-	private JTextField textField_7;
-	private JTextField textField_8;
-	private JTextField textField_9;
-	private JTextField textField_10;
-	private JTextField textField_11;
+	private JTextField textChicken;
+	private JTextField textHamburger;
+	private JTextField textSteak;
+	private JTextField textTurkey;
+	private JTextField textChocolateC;
+	private JTextField textIceCream;
+	private JTextField textPeach;
+	private JTextField textSCake;
+	private JTextField textCola;
+	private JTextField textCoffee;
+	private JTextField textBeer;
+	private JTextField textLemonade;
+	private JTextField textTotal;
+	private JTextField textTax;
+	private JTextField textSubtotal;
 
 	/**
 	 * Launch the application.
@@ -80,61 +83,61 @@ public class Menu {
 		panel.setBounds(6, 43, 217, 210);
 		frame.getContentPane().add(panel);
 		
-		JCheckBox chckbxNewCheckBox_1 = new JCheckBox("Chicken Salad      ");
-		panel.add(chckbxNewCheckBox_1);
+		JLabel lblNewLabel_1 = new JLabel("Chicken Salad");
+		panel.add(lblNewLabel_1);
 		
-		textField = new JTextField();
-		textField.addKeyListener(new KeyAdapter() {
+		textChicken = new JTextField();
+		textChicken.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyTyped(KeyEvent evt) {
 				Child_Rest iNum = new Child_Rest();
 				iNum.Number(evt);
 			}
 		});
-		panel.add(textField);
-		textField.setColumns(2);
+		panel.add(textChicken);
+		textChicken.setColumns(2);
 		
 		JCheckBox chckbxNewCheckBox_3 = new JCheckBox("Hamburger           ");
 		panel.add(chckbxNewCheckBox_3);
 		
-		textField_1 = new JTextField();
-		textField_1.addKeyListener(new KeyAdapter() {
+		textHamburger = new JTextField();
+		textHamburger.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyTyped(KeyEvent evt) {
 				Child_Rest iNum = new Child_Rest();
 				iNum.Number(evt);
 			}
 		});
-		panel.add(textField_1);
-		textField_1.setColumns(2);
+		panel.add(textHamburger);
+		textHamburger.setColumns(2);
 		
 		JCheckBox chckbxNewCheckBox = new JCheckBox("Steak                    ");
 		panel.add(chckbxNewCheckBox);
 		
-		textField_2 = new JTextField();
-		textField_2.addKeyListener(new KeyAdapter() {
+		textSteak = new JTextField();
+		textSteak.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyTyped(KeyEvent evt) {
 				Child_Rest iNum = new Child_Rest();
 				iNum.Number(evt);
 			}
 		});
-		panel.add(textField_2);
-		textField_2.setColumns(2);
+		panel.add(textSteak);
+		textSteak.setColumns(2);
 		
 		JCheckBox chckbxNewCheckBox_2 = new JCheckBox("Turkey Sandwhich");
 		panel.add(chckbxNewCheckBox_2);
 		
-		textField_3 = new JTextField();
-		textField_3.addKeyListener(new KeyAdapter() {
+		textTurkey = new JTextField();
+		textTurkey.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyTyped(KeyEvent evt) {
 				Child_Rest iNum = new Child_Rest();
 				iNum.Number(evt);
 			}
 		});
-		panel.add(textField_3);
-		textField_3.setColumns(2);
+		panel.add(textTurkey);
+		textTurkey.setColumns(2);
 		
 		JTextArea textArea = new JTextArea();
 		panel.add(textArea);
@@ -153,59 +156,59 @@ public class Menu {
 		JCheckBox chckbxNewCheckBox_6 = new JCheckBox("Chocolate Cake");
 		panel_1.add(chckbxNewCheckBox_6);
 		
-		textField_4 = new JTextField();
-		textField_4.addKeyListener(new KeyAdapter() {
+		textChocolateC = new JTextField();
+		textChocolateC.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyTyped(KeyEvent evt) {
 				Child_Rest iNum = new Child_Rest();
 				iNum.Number(evt);
 			}
 		});
-		panel_1.add(textField_4);
-		textField_4.setColumns(2);
+		panel_1.add(textChocolateC);
+		textChocolateC.setColumns(2);
 		
 		JCheckBox chckbxNewCheckBox_7 = new JCheckBox("Ice Cream         ");
 		panel_1.add(chckbxNewCheckBox_7);
 		
-		textField_5 = new JTextField();
-		textField_5.addKeyListener(new KeyAdapter() {
+		textIceCream = new JTextField();
+		textIceCream.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyTyped(KeyEvent evt) {
 				Child_Rest iNum = new Child_Rest();
 				iNum.Number(evt);
 			}
 		});
-		panel_1.add(textField_5);
-		textField_5.setColumns(2);
+		panel_1.add(textIceCream);
+		textIceCream.setColumns(2);
 		
 		JCheckBox chckbxNewCheckBox_4 = new JCheckBox("Peach Cobbler  ");
 		panel_1.add(chckbxNewCheckBox_4);
 		
-		textField_6 = new JTextField();
-		textField_6.addKeyListener(new KeyAdapter() {
+		textPeach = new JTextField();
+		textPeach.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyTyped(KeyEvent evt) {
 				Child_Rest iNum = new Child_Rest();
 				iNum.Number(evt);
 			}
 		});
-		panel_1.add(textField_6);
-		textField_6.setColumns(2);
+		panel_1.add(textPeach);
+		textPeach.setColumns(2);
 		
 		JCheckBox chckbxNewCheckBox_5 = new JCheckBox("Strawberry Cake");
 		chckbxNewCheckBox_5.setFont(new Font("Lucida Grande", Font.PLAIN, 12));
 		panel_1.add(chckbxNewCheckBox_5);
 		
-		textField_7 = new JTextField();
-		textField_7.addKeyListener(new KeyAdapter() {
+		textSCake = new JTextField();
+		textSCake.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyTyped(KeyEvent evt) {
 				Child_Rest iNum = new Child_Rest();
 				iNum.Number(evt);
 			}
 		});
-		panel_1.add(textField_7);
-		textField_7.setColumns(2);
+		panel_1.add(textSCake);
+		textSCake.setColumns(2);
 		
 		JButton btnNewButton = new JButton("Add Item");
 		panel_1.add(btnNewButton);
@@ -218,58 +221,58 @@ public class Menu {
 		JCheckBox chckbxNewCheckBox_8 = new JCheckBox("Beer          ");
 		panel_2.add(chckbxNewCheckBox_8);
 		
-		textField_10 = new JTextField();
-		textField_10.addKeyListener(new KeyAdapter() {
+		textBeer = new JTextField();
+		textBeer.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyTyped(KeyEvent evt) {
 				Child_Rest iNum = new Child_Rest();
 				iNum.Number(evt);
 			}
 		});
-		panel_2.add(textField_10);
-		textField_10.setColumns(2);
+		panel_2.add(textBeer);
+		textBeer.setColumns(2);
 		
 		JCheckBox chckbxNewCheckBox_9 = new JCheckBox("Cola         ");
 		panel_2.add(chckbxNewCheckBox_9);
 		
-		textField_8 = new JTextField();
-		textField_8.addKeyListener(new KeyAdapter() {
+		textCola = new JTextField();
+		textCola.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyTyped(KeyEvent evt) {
 				Child_Rest iNum = new Child_Rest();
 				iNum.Number(evt);
 			}
 		});
-		panel_2.add(textField_8);
-		textField_8.setColumns(2);
+		panel_2.add(textCola);
+		textCola.setColumns(2);
 		
 		JCheckBox chckbxNewCheckBox_10 = new JCheckBox("Coffee      ");
 		panel_2.add(chckbxNewCheckBox_10);
 		
-		textField_9 = new JTextField();
-		textField_9.addKeyListener(new KeyAdapter() {
+		textCoffee = new JTextField();
+		textCoffee.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyTyped(KeyEvent evt) {
 				Child_Rest iNum = new Child_Rest();
 				iNum.Number(evt);
 			}
 		});
-		panel_2.add(textField_9);
-		textField_9.setColumns(2);
+		panel_2.add(textCoffee);
+		textCoffee.setColumns(2);
 		
 		JCheckBox chckbxNewCheckBox_11 = new JCheckBox("Lemonade");
 		panel_2.add(chckbxNewCheckBox_11);
 		
-		textField_11 = new JTextField();
-		textField_11.addKeyListener(new KeyAdapter() {
+		textLemonade = new JTextField();
+		textLemonade.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyTyped(KeyEvent evt) {
 				Child_Rest iNum = new Child_Rest();
 				iNum.Number(evt);
 			}
 		});
-		panel_2.add(textField_11);
-		textField_11.setColumns(2);
+		panel_2.add(textLemonade);
+		textLemonade.setColumns(2);
 		
 		JButton btnNewButton_1 = new JButton("Add Item");
 		btnNewButton_1.addActionListener(new ActionListener() {
@@ -280,51 +283,47 @@ public class Menu {
 		
 		JButton btnNewButton_3 = new JButton("Total");
 		btnNewButton_3.addActionListener(new ActionListener() {
-			private JLabel txtChicken;
-			private JLabel txtHamburger;
-			private JLabel txtSteak;
-			private JLabel txtTurkey;
 			
-			private JLabel txtChocolateC;
-			private JLabel txtIceCream;
-			private JLabel txtPeach;
-			private JLabel txtStrawberry;
-			
-			private JLabel txtBeer;
-			private JLabel txtCola;
-			private JLabel txtCoffee;
-			private JLabel txtLemonade;
-			
-			private JLabel txtTotal;
 
 			public void actionPerformed(ActionEvent e) {
 				
 				Child_Rest ItemCost = new Child_Rest();
+				double iTax, iSubtotal, iTotal;
+				
+				ItemCost.ChickenSalad = ItemCost.pChickenSalad + Double.parseDouble(textChicken.getText());
+				ItemCost.Hamburger = ItemCost.pHamburger + Double.parseDouble(textHamburger.getText());
+				ItemCost.Steak = ItemCost.pSteak + Double.parseDouble(textSteak.getText());
+				ItemCost.TurkeySandwhich = ItemCost.pTurkeySandwhich + Double.parseDouble(textTurkey.getText());
+				
+				ItemCost.ChocolateCake = ItemCost.pChocolateCake + Double.parseDouble(textChocolateC.getText());
+				ItemCost.IceCream = ItemCost.pIceCream + Double.parseDouble(textIceCream.getText());
+				ItemCost.PeachCobbler = ItemCost.pPeachCobbler + Double.parseDouble(textPeach.getText());
+				ItemCost.StrawberryCake = ItemCost.pStrawberryCake + Double.parseDouble(textSCake.getText());
+				
+				ItemCost.Beer = ItemCost.pBeer + Double.parseDouble(textBeer.getText());
+				ItemCost.Cola = ItemCost.pCola + Double.parseDouble(textCola.getText());
+				ItemCost.Coffee = ItemCost.pCoffee + Double.parseDouble(textCoffee.getText());
+				ItemCost.Lemonade = ItemCost.pLemonade + Double.parseDouble(textLemonade.getText());
 				
 				
-				ItemCost.ChickenSalad = ItemCost.pChickenSalad + Double.parseDouble(txtChicken.getText());
-				ItemCost.Hamburger = ItemCost.pHamburger + Double.parseDouble(txtHamburger.getText());
-				ItemCost.Steak = ItemCost.pSteak + Double.parseDouble(txtSteak.getText());
-				ItemCost.TurkeySandwhich = ItemCost.pTurkeySandwhich + Double.parseDouble(txtTurkey.getText());
+				iSubtotal= ItemCost.GetAmount();
+				iTax = ItemCost.FindTax(iSubtotal);
+				iTotal = iSubtotal + iTax;
 				
-				ItemCost.ChocolateCake = ItemCost.pChocolateCake + Double.parseDouble(txtChocolateC.getText());
-				ItemCost.IceCream = ItemCost.pIceCream + Double.parseDouble(txtIceCream.getText());
-				ItemCost.PeachCobbler = ItemCost.pPeachCobbler + Double.parseDouble(txtPeach.getText());
-				ItemCost.StrawberryCake = ItemCost.pStrawberryCake + Double.parseDouble(txtStrawberry.getText());
 				
-				ItemCost.Beer = ItemCost.pBeer + Double.parseDouble(txtChicken.getText());
-				ItemCost.Cola = ItemCost.pCola + Double.parseDouble(txtChicken.getText());
-				ItemCost.Coffee = ItemCost.pCoffee + Double.parseDouble(txtChicken.getText());
-				ItemCost.Lemonade = ItemCost.pLemonade + Double.parseDouble(txtChicken.getText());
+				String Subtotal = String.format("£%.2f" , iSubtotal);
+				textSubtotal.setText(Subtotal);
 				
-				double iTotal = ItemCost.GetAmount();
+				String Tax = String.format("£%.2f" , iTax);
+				textTax.setText(Tax);
 				
 				String Total = String.format("£%.2f" , iTotal);
-				txtTotal.setText(Total);
+				textTotal.setText(Total);
+				
 				
 			}
 		});
-		btnNewButton_3.setBounds(193, 265, 117, 29);
+		btnNewButton_3.setBounds(200, 359, 117, 29);
 		frame.getContentPane().add(btnNewButton_3);
 		
 		JButton btnNewButton_4 = new JButton("Exit");
@@ -368,5 +367,28 @@ public class Menu {
 			}});
 		btnNewButton_5.setBounds(322, 265, 117, 29);
 		frame.getContentPane().add(btnNewButton_5);
+		
+		textTotal = new JTextField();
+		textTotal.setBounds(41, 359, 130, 26);
+		frame.getContentPane().add(textTotal);
+		textTotal.setColumns(10);
+		
+		textTax = new JTextField();
+		textTax.setBounds(41, 303, 130, 26);
+		frame.getContentPane().add(textTax);
+		textTax.setColumns(10);
+		
+		JLabel lblSubtotal = new JLabel("Subtotal");
+		lblSubtotal.setBounds(212, 270, 61, 16);
+		frame.getContentPane().add(lblSubtotal);
+		
+		JLabel lblTax = new JLabel("Tax");
+		lblTax.setBounds(212, 308, 61, 16);
+		frame.getContentPane().add(lblTax);
+		
+		textSubtotal = new JTextField();
+		textSubtotal.setBounds(41, 265, 130, 26);
+		frame.getContentPane().add(textSubtotal);
+		textSubtotal.setColumns(10);
 	}
 }
