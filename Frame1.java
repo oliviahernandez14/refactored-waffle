@@ -1,13 +1,20 @@
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+import javax.swing.AbstractButton;
 import javax.swing.JButton;
 import javax.swing.JTextField;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.IOException;
+import java.io.Writer;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextArea;
 import javax.swing.JLabel;
 import java.awt.Color;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 public class Frame1 {
 
@@ -48,27 +55,40 @@ public class Frame1 {
 		JButton btnLogin = new JButton("Login");
 		btnLogin.setBackground(new Color(135, 206, 250));
 		btnLogin.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+			public void actionPerformed(ActionEvent e) 
+			{
+			
+				JTextField textusername;
+				JTextField textpassword;
 				
+			
+				JLabel lblNewLabel = new JLabel("Username:");
+				textusername = new JTextField(15);
+				
+				JLabel lblNewLabel_1 = new JLabel("Password:");
+				textpassword = new JTextField(15);
 			}
 		});
 		btnLogin.setBounds(156, 209, 110, 26);
 		ManagementSystem.getContentPane().add(btnLogin);
 		
-		JTextArea textArea = new JTextArea();
-		textArea.setBounds(156, 71, 212, 16);
-		ManagementSystem.getContentPane().add(textArea);
-		
-		JTextArea textArea_1 = new JTextArea();
-		textArea_1.setBounds(156, 139, 212, 16);
-		ManagementSystem.getContentPane().add(textArea_1);
-		
 		JLabel lblNewLabel = new JLabel("Username:");
 		lblNewLabel.setBounds(29, 71, 93, 26);
 		ManagementSystem.getContentPane().add(lblNewLabel);
 		
+		JTextArea textusername = new JTextArea();
+		textusername.setBounds(156, 71, 212, 16);
+		ManagementSystem.getContentPane().add(textusername);
+		
+		
+		
+		
 		JLabel lblNewLabel_1 = new JLabel("Password:");
 		lblNewLabel_1.setBounds(29, 139, 93, 26);
 		ManagementSystem.getContentPane().add(lblNewLabel_1);
+		
+		JTextArea textpassword = new JTextArea();
+		textpassword.setBounds(156, 139, 212, 16);
+		ManagementSystem.getContentPane().add(textpassword);
 	}
 }
